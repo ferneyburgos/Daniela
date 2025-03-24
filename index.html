@@ -56,8 +56,31 @@
     </div>
 
     <div class="gif-container">
-        <img src="img/NARUTO.gif" alt="NARUTO GIF" style="display: block; margin: 20px auto;">
-    </div>
+    <img src="img/NARUTO.gif" alt="NARUTO GIF" style="display: block; margin: 20px auto;">
+</div>
+
+<!-- Botón para mostrar la carta -->
+<div style="text-align: center; margin-top: 20px;">
+    <button onclick="mostrarCarta()" class="botones" style="padding: 10px 20px; background-color: #ff69b4; color: white; border: none; border-radius: 10px; cursor: pointer;">
+        💌 Lee esta cartita
+    </button>
+</div>
+
+<!-- Carta oculta al inicio -->
+<div id="carta" style="display: none; color: white; max-width: 600px; margin: 30px auto; background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 15px; font-size: 18px;">
+    <p>Querida Dani,</p>
+    <p>Solo quería recordarte lo especial que eres. Tu sonrisa, tu dulzura y esa chispa única que tienes me tienen completamente encantado.</p>
+    <p>Este detallito es una muestra de lo mucho que pienso en ti y de las ganas que tengo de sacarte una sonrisa.</p>
+    <p>Con mucho cariño,</p>
+    <p>💗 Tu admirador</p>
+</div>
+
+<!-- Script para mostrar la carta -->
+<script>
+    function mostrarCarta() {
+        document.getElementById("carta").style.display = "block";
+    }
+</script>
     
     <div class="greetings">
         <span>H</span>
